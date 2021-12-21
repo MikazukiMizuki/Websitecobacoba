@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../images/logo1.gif" alt="" id="logo">
+        <ul id="log-reg">
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="regis"><a href="register.html">Register</a> </li>
+        </ul>
+    </div>
+
+
+    <nav class="nav">
+        <ul id="hpc">
+            <li id="home"><a href="index.html" class="nav-content">Home</a></li>
+            <li id="product"><a href="#" class="nav-content">Product</a>
+                <ul id="fcl">
+                    <li class="car"><a href="familycar.html" class="nav-content-2">Family Car</a></li>
+                    <li class=" car"><a href="#" class="nav-content-2">Commercial Car</a></li>
+                    <li class=" car"><a href="#" class="nav-content-2">Luxury Car</a></li>
+                </ul>
+            </li>
+            <li id="contact"><a href="contact.html" class="nav-content">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-container">
+        <h1>GET IN TOUCH</h1>
+        <div class="contact">
+            <div class="contact-kiri">
+                <label for="name"><h3>Name</h3></label>
+                <input type="text" name="name" id="name" placeholder="Enter name">
+                <label for="email"><h3>Email</h3></label>
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+            </div>
+            <div class="contact-tengah">
+                <label for="message"><h3>Message</h3></label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <input type="submit" name="send" id="send" value="Send Message">
+            </div>
+            <div class="contact-kanan">
+                <h1>Contact</h1>
+                <div class="contact-kanan-content">
+                    <h2>Phone and WhatsApp</h2>
+                <p>+62899-2562-5625-6</p>
+                </div>
+
+                <div class="contact-kanan-content">
+                    <h2>Facebook</h2>
+                    <p id="fb">Caroline Rentals Facebook</p>
+                </div>
+                <div class="contact-kanan-content">
+                    <h2>Email</h2>
+                    <p>admin@carolinerentals.com</p>
+                </div>
+                <div class="contact-kanan-content">
+                    <h2>Location</h2>
+                    <p>Jalan Kyai Haji Syahdan No.9 Kemanggisan, Palmerah, Jakarta Barat, DKI Jakarta 11480</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-atas">
+            <div class="footer-kiri">
+                <div class="sosmed">
+                    <img src="../images/instagram.png" alt="">
+                    <img src="../images/youtube.png" alt="">
+                    <img src="../images/twitter.png" alt="">
+                    <img src="../images/facebook.png" alt="">
+                </div>
+            </div>
+            <div class="footer-kanan">
+                <div class="subskreb">
+                    <p id="our">Subscribe to Our Newsletter</p>
+                    <input type="email" placeholder="Your Email">
+                    <button href="#" id="tombol">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bawah">
+            <p id="copy">&copyCopyright 2018 (Winston Ak)</p>
+        </div>
+
+    </footer>
+</body>
+
+
+
+<!-- <script type="text/javascript">
+    const currentLocation = location.href;
+    const menuItem = document.querySelectorAll('a');
+    const menuLength = menuItem.length;
+    for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currentLocation) {
+            if (menuItem[i].className === "nav-content-2") {
+                console.log(menuItem[i].parentNode.parentNode.parentNode);
+                const menuItem2 = document.getElementsByClassName("nav-content");
+                menuItem[1].classList.add("active");
+            }
+            else {
+                menuItem[i].classList.add("active");
+            }
+        }
+    }
+</script> -->
+
+</html>

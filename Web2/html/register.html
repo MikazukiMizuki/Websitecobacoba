@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="register-container">
+        <form action="#" id="form2">
+            <h1>Register</h1>
+            <label for="name">
+                <h3>Name :</h3>
+            </label>
+            <input type="text" name="name" id="name">
+            <label for="email">
+                <h3>Email :</h3>
+            </label>
+            <input type="email" name="email" id="email">
+            <label for="gender">
+                <h3>Gender :</h3>
+            </label>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <label for="city" id="break-line">City :</label>
+            <select name="city" id="city">
+                <option value=""></option>
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="bali">Bali</option>
+                <option value="depok">Depok</option>
+                <option value="bogor">Bogor</option>
+            </select>
+            <label for="address">Address :</label>
+            <textarea name="address" id="address"></textarea>
+            <input type="submit" id="register" value="register" onclick="validateRegister();">
+        </form>
+    </div>
+</body>
+
+</html>

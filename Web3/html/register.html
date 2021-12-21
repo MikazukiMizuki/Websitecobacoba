@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="../images/logo.svg" alt="" id="logo">
+            </div>
+
+            <ul id="log-reg">
+                <li id="regis"><a href="register.html">Register</a> </li>
+                <li id="login"><a href="login.html">Login</a></li>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="hma">
+            <li id="home"><a href="index.html" class="nav-content active nav-1">Home</a></li>
+            <li id="menu"><a href="#" class="nav-content collapsible nav-2">Menu <span class="arrow">&#9660;</span></a>
+                <ul id="brps">
+                    <li class="food"><a href="burger.html" class="nav-content-2" id="collaps-1">Burger</a></li>
+                    <li class="food"><a href="#" class="nav-content-2" id="collaps-1">Rice & Pasta</a></li>
+                    <li class="food"><a href="#" class="nav-content-2" id="collaps-1">Seafood</a></li>
+                </ul>
+            </li>
+            <li id="about"><a href="about.html" class="nav-content nav-3">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="register-container">
+        <form action="#" id="form2">
+            <h1>Register</h1>
+            <label for="name">
+                <h3>Name:</h3>
+            </label>
+            <input type="text" name="name" id="name">
+            <label for="email">
+                <h3>Email:</h3>
+            </label>
+            <input type="email" name="email" id="email">
+            <label for="gender">
+                <h3>Gender:</h3>
+            </label>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <label for="city" id="break-line">City :</label>
+            <select name="city" id="city">
+                <option value=""></option>
+                <option value="jakarta" selected>Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="bali">Bali</option>
+                <option value="depok">Depok</option>
+                <option value="bogor">Bogor</option>
+            </select>
+
+            <label for="password">
+                <h3 class="laber">Password:</h3>
+                <input type="password" name="password" id="password">
+                <label for="cpassword">
+                    <h3 class="laber">Confirm Password:</h3>
+                    <input type="password" name="cpassword" id="cpassword">
+
+                    <input type="submit" id="register" value="register" onclick="validateRegister();">
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="sosmed">
+                    <a href="https://twitter.com/home" target="_blank"><img src="../images/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="footer-content">
+                <p>Copyright &copy 2021 Winston Adinata Kusumo. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
