@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doto 2 - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="regis()">Sign Up</button>
+        </div>
+
+        <form class="input-signup" id="regis">
+            <input type="text" id ="username" class="input-field" placeholder="Username">
+            <div id="error"></div>
+
+            <input type="email" id="email" class="input-field" placeholder="Email">
+            <div id="error"></div>
+
+            <input type="text" id="password" class="input-field" placeholder="Password">
+            <div id="error"></div>
+
+            <input type="text" id="region" class="input-field" placeholder="Region">
+            <div id="error"></div>
+
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" class="input-field" id="date-of-birth" name="Date of Birth" placeholder="Date of Birth">  
+            <input type="checkbox" class="check-box"><span>With my registration, I agree to the Terms and Conditions provided by Doto 2</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+    </div>
+
+    <script>
+        var x = document.getElementById("regis");
+        var y = document.getElementById("btn");
+
+        function regis(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+    </script>
+</body>
+</html>
+
+---------------- Option 2 ---------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doto 2 - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Play With Us, Now
+        </div>
+   
+        <div class="form">    
+            <div class="input-field">
+                <label>Username</label>
+                <input type="text" name="Username" id="username" class="input">
+            </div>
+
+            <div class="input-field">
+                <label>Email</label>
+                <input type="text" name="Email" id="email" class="input">
+            </div>
+
+            <div class="input-field">
+                <label>Password</label>
+                <input type="text" name="Password" id="password" class="input">
+            </div>
+
+            <div class="input-field">
+                <label>Region</label>
+                <input type="text" name="Region" id="region" class="input">
+            </div>
+
+            <div class="input-field">
+                <label>Date of Birth</label>
+                <input type="text" name="Date of Birth" id="dob" class="input">
+            </div>
+
+            <div class="input-field-terms">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <p>I agree to the Terms and Privacy Policies provided by Doto 2</p>
+            </div>
+
+            <div class="inputfield">
+                <input type="submit" name="Submit" id="submit">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

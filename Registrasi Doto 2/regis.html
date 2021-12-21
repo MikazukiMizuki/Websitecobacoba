@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doto 2 - Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../Project/js/script2.js" defer></script>
+    <script src="script3.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    </script>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+        <div class="header">
+            <a href="../homepage/homepage.html">
+                <ul class="logo">
+                    <img src="../Project/asset/logogame2.png" alt="tes">
+                </ul>
+            </a>
+            <div class="header-kiri">
+                <a href="../Project/html/heroes.html">
+                    <ul class="heroes">
+                        <h1>Heroes</h1>
+                    </ul>
+                </a>
+                <a href="../Project/html/mechanics.html">
+                    <ul class="mechanics">
+                        <h1>Mechanics</h1>
+                    </ul>
+                </a>
+                <a href="../Merchandise Doto 2/merch.html">
+                    <ul class="merchandise">
+                        <h1>Merchandise</h1>
+                    </ul>
+                </a>
+                <a href="regis.html">
+                    <ul class="register">
+                        <h1>Register</h1>
+                    </ul>
+                </a>
+
+            </div>
+            <div class="dropdown-header">
+                <button onclick="dropdownheader()" class="btndrop">Contents</button>
+                <div id="dropbtn" class="btndrop-content">
+                    <a href="../Project/html/heroes.html">Heroes</a>
+                    <a href="../Project/html/mechanics.html">Mechanics</a>
+                    <a href="../Merchandise Doto 2/merch.html">Merchandise</a>
+                    <a href=""regis.html">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control success">
+                <label>Username</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label>Email</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+                <small>Error</small>
+            </div>
+
+            <div class="form-control error">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label>Region</label>
+                <input type="text" name="region" id="region" placeholder="Region">
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="birthday">Date of Birth:</label>
+                <input type="date" class="input-field" id="date-of-birth" name="Date of Birth"
+                    placeholder="Date of Birth">
+            </div>
+            <hr>
+
+            <input type="checkbox" class="check-box" id="check-box"><span>With my registration, I agree to the Terms and Conditions
+                provided by Doto 2</span>
+
+            <button type="submit" class="submit-btn" id="submits" onclick="return myValidate()">Register</button>
+
+        </form>
+
+        <div class="footer">
+            <div class="footer-atas">
+                <div class="copr">
+                    <h3>©2021 HWD Games All Right Reserved</h3>
+                </div>
+                <div class="term">
+                    <h4>Privacy Notice</h4>
+                    <h4>Terms of Service</h4>
+                    <h4>Cookie Preference</h4>
+                </div>
+            </div>
+            <div class="footer-bawah">
+                <div class="footer-bawah-text">
+                    <h3>Follow Us</h3>
+                </div>
+                <div class="footer-logo">
+                    <a href="https://twitter.com/DOTA2?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                            src="../Project/asset/twitterlogo.png" alt=""></a>
+                    <a href="https://www.facebook.com/dota2/"><img src="../Project/asset/facebooklogo.png" alt=""></a>
+                    <a href="https://www.instagram.com/dota2/?hl=en"><img src="../Project/asset/instagramlogo.png"
+                            alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+
+</html>
